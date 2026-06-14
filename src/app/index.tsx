@@ -41,6 +41,21 @@ export default function HomeScreen() {
           <Text style={styles.cardDesc}>Kiểm tra kiến thức mạch điện ô tô</Text>
         </View>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.card}
+        onPress={() => router.push("/quiz/wire-color-quiz")}
+      >
+        <Text style={styles.icon}>🎨</Text>
+
+        <View>
+          <Text style={styles.cardTitle}>Màu dây điện</Text>
+
+          <Text style={styles.cardDesc}>
+            Học và kiểm tra mã màu dây điện ô tô
+          </Text>
+        </View>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }
